@@ -2,18 +2,26 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
-    <title>Minesweeper</title>
+    <title>MINESWEEPER</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="direct">
-        <div class="grid"></div>
-
-        <div class="useless">
-          BOMBS REMAINING TO IDENTIFY: <span id="flags-left"></span>
-        </div>
+    <div class="screen">
+      <div class="leftscreen">
+        <div id="title">MINESWEEPER</div>
         <div id="result"></div>
+        <button id="restart" onclick="handleClick()">RESTART</button>
+        <div class="useless">
+          MINES LEFT TO IDENTIFY: <span id="leftmines"></span>
+        </div>
+        <div id="instabut">
+          <div id="insta"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="direct">
+          <div class="grid"></div>
+        </div>
       </div>
     </div>
     <script src="index.js"></script>
